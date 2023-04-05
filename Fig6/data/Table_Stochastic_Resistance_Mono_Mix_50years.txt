@@ -1,0 +1,5 @@
+Tillage,CycleLength,AverageResistanceYear,FractionResistance,AverageEscapeYear,FractionEscapes,AverageSingleResistanceYear,FractionSingleResistance,AverageDoubleResistanceYear,FractionDoubleResistance,AverageFullDoubleResistanceYear,FractionFullDoubleResistance,FinalDensityEscapes
+0,0,1,0.00021,1.5,0.0001,1,0.00021,NaN,0,NaN,0,0
+1,0,1,0.00027,1.08695652173913,0.00023,1,0.00027,NaN,0,NaN,0,0
+0,30,22.8968808590421,0.29335,23.5382427416837,0.28829,22.8968808590421,0.29335,31.7091376322238,0.16733,NaN,0,203.158197797357
+1,30,11.1066578773896,0.07585,12.0799098860323,0.07546,11.1066578773896,0.07585,26.6392371534522,0.05663,NaN,0,210.019674821097
