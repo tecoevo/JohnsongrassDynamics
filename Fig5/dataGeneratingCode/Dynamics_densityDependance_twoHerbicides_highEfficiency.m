@@ -88,12 +88,12 @@ E_tillers2 = [0.985, 0.992];
 % produced by a type j plant pollinated by type k pollen. 
 % (1 corresponding to genotype SS, 2 corresponding to genotype RS, 
 % 3 corresponding to genotype RR) 
-M1 = {[1 0.5 0; 0.5 0.25 0; 0 0 0], [0 0.5 1; 0.5 0.5 0.5; 1 0.5 0],...
+MI = {[1 0.5 0; 0.5 0.25 0; 0 0 0], [0 0.5 1; 0.5 0.5 0.5; 1 0.5 0],...
     [0 0 0; 0 0.25 0.5; 0 0.5 1]};
 % Add Mutation:
-M1{1} = (1 - mu)^2 * M1{1};
-M1{2} = 2 * mu * (1 - mu) * M1{1} + (1 - mu) * M1{2};
-M1{3} = mu^2 * M1{1} + mu * M1{2} + M1{3};
+M1{1} = (1 - mu)^2 * MI{1};
+M1{2} = 2 * mu * (1 - mu) * MI{1} + (1 - mu) * MI{2};
+M1{3} = mu^2 * MI{1} + mu * MI{2} + MI{3};
 
 % Cell array of inheritance matrices. With the row j column k entry of the
 % cell i matrix giving the fraction of type i seeds produced by a type j
