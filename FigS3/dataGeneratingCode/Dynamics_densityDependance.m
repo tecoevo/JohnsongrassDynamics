@@ -76,12 +76,12 @@ E_tillers = [0.985, 0.992];
 % cell i matrix giving the fraction of type i seeds produced by a type j
 % plant pollinated by type k pollen. (1 corresponding to genotype SS, 2 
 % corresponding to genotype RS, 3 corresponding to genotype RR) 
-M = {[1 0.5 0; 0.5 0.25 0; 0 0 0], [0 0.5 1; 0.5 0.5 0.5; 1 0.5 0],...
+MI = {[1 0.5 0; 0.5 0.25 0; 0 0 0], [0 0.5 1; 0.5 0.5 0.5; 1 0.5 0],...
     [0 0 0; 0 0.25 0.5; 0 0.5 1]};
 % Add Mutation:
-M{1} = (1 - mu)^2 * M{1};
-M{2} = 2 * mu * (1 - mu) * M{1} + (1 - mu) * M{2};
-M{3} = mu^2 * M{1} + mu * M{2} + M{3};
+M{1} = (1 - mu)^2 * MI{1};
+M{2} = 2 * mu * (1 - mu) * MI{1} + (1 - mu) * MI{2};
+M{3} = mu^2 * MI{1} + mu * MI{2} + MI{3};
 
 % 3 x (n_years+1) array of genotype frequencies in the seed bank. Each  
 % column corresponds to one season. Row 1 contains the numbers of SS seeds  
